@@ -589,6 +589,8 @@ In the case of one real human, each model achieved good results. However, when t
 
 [GitHub - KuiZenith/voice-recognition](https://github.com/KuiZenith/voice-recognition)
 
+[YouTube - AI Final Project Team 3](https://youtu.be/SwBo0nZe16Q)
+
 [GitHub - suno-ai/bark: 🔊 Text-Prompted Generative Audio Model](https://github.com/suno-ai/bark)
 
 [25. 簡介LSTM 與GRU](https://medium.com/programming-with-data/25-簡介lstm-與gru-3e0eaa100d29)
