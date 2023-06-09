@@ -539,6 +539,18 @@ Lastly, in the scenario of 6 individuals with real human voices, we observe that
     - learning rate=0.00003
     - weight decay=0.00001
 
+The best experimental results we achieved on the dataset containing human voice were obtained using a model trained with Conv2d and a single layer LSTM, specifically the results of experiment 6-4. Additionally, in this model, we obtained consistent results with previous inferences.
+
+Firstly, we used Conv2d instead of Conv1d due to the inclusion of human voice in the dataset. This choice was made to avoid the scaling issue caused by the different formats of audio files.
+
+Secondly, we opted for a single layer LSTM instead of a two-layer LSTM because a single layer LSTM incurs lower computational costs, effectively saving training and inference time as well as computational resources. Furthermore, we chose a single layer LSTM over a single layer GRU because the GRU model tends to exhibit overfitting phenomena in training scenarios with 10,000 steps, a learning rate of 3e-5, and weight decay of 1e-5.
+
+我們在包含真人聲音的資料集上，所取得的最佳實驗成果是基於 Conv2d 和 1 layer LSTM 訓練出的模型，也就是實驗 6-4 的結果。另外在此模型中，我們得出了和先前的推論一致的結果。
+
+首先，由於資料集中包含真人的聲音，因此使用 Conv2d 而非 Conv1d，以規避因為聲音檔的格式不同而導致的數量級問題。
+
+其次，使用 1 layer 的 LSTM 而非 2 layer 是因為 1 layer 的 LSTM 運算所需成本較低，可以有效地節約訓練和推論的時間和運算資源。此外，之所以使用 1 layer 的 LSTM 而非 1 layer 的 GRU，則是因為 GRU 的模型在 10000 步、3e-5 的學習率和 1e-5 的權重衰退的訓練情境下，較容易出現過擬合的現象。
+
 ## Limitation of our work
 
 ### 1. Limitation of training
