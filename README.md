@@ -1,4 +1,4 @@
-# AI final project - Voice Recognition
+# AI final project: Voice Recognition
 
 # Introduction
 
